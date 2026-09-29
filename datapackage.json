@@ -1,0 +1,53 @@
+{
+  "name": "us-construction-estimating-constants",
+  "title": "US Construction Estimating Constants",
+  "description": "Constants used by the TakeoffMetric construction calculators (bag yields, aggregate and soil densities, swell and compaction ratios, rebar weights, dressed lumber sizes, masonry counts and mortar rules of thumb, roofing coverage, asphalt unit weights, air properties), each linked to the primary source it was read from.",
+  "version": "1.0.0",
+  "created": "2026-09-29",
+  "homepage": "https://takeoffmetric.com/",
+  "contributors": [
+    { "title": "TakeoffMetric Editorial", "organization": "TakeOffMetrics Research", "role": "author" }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 for the compilation; each value remains attributed to its source",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "keywords": ["construction", "estimating", "materials", "density", "concrete", "masonry", "lumber", "earthwork"],
+  "resources": [
+    {
+      "name": "constants",
+      "path": "constants.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "dialect": { "delimiter": ",", "quoteChar": "\"", "header": true },
+      "schema": {
+        "primaryKey": ["id"],
+        "fields": [
+          { "name": "id", "type": "string", "description": "Stable row identifier, category prefix + number", "constraints": { "required": true, "unique": true } },
+          { "name": "category", "type": "string", "constraints": { "required": true, "enum": ["concrete", "rebar", "aggregates", "earthwork", "landscaping", "asphalt", "masonry", "pavers", "roofing", "lumber", "framing", "decking", "stairs", "hvac"] } },
+          { "name": "material_or_item", "type": "string", "constraints": { "required": true } },
+          { "name": "quantity", "type": "string", "description": "What the value measures", "constraints": { "required": true } },
+          { "name": "value", "type": "number", "description": "Value as printed by the source, US customary units", "constraints": { "required": true } },
+          { "name": "unit", "type": "string", "constraints": { "required": true } },
+          { "name": "value_si", "type": "number", "description": "Conversion of value with exact NIST factors, 4 significant digits; empty for unit-specific coefficients" },
+          { "name": "unit_si", "type": "string" },
+          { "name": "condition", "type": "string", "description": "State or scope the value applies to (loose, bank, compacted, product line...)" },
+          { "name": "source_publisher", "type": "string", "constraints": { "required": true } },
+          { "name": "source_title", "type": "string", "constraints": { "required": true } },
+          { "name": "source_url", "type": "string", "format": "uri", "constraints": { "required": true } },
+          { "name": "source_type", "type": "string", "constraints": { "required": true, "enum": ["federal_public_domain", "manufacturer_datasheet", "trade_association", "supplier", "other"] } },
+          { "name": "date_opened", "type": "date", "description": "Date the value was read in the source", "constraints": { "required": true } },
+          { "name": "used_by_tool_url", "type": "string", "description": "Calculator page(s) using the value, separated by '; '", "constraints": { "required": true } },
+          { "name": "engine_file", "type": "string", "description": "Site source file(s) holding the value, separated by '; '" },
+          { "name": "engine_symbol", "type": "string", "description": "Symbol(s) in engine_file, same order, separated by '; '" },
+          { "name": "notes", "type": "string" }
+        ]
+      }
+    }
+  ]
+}
