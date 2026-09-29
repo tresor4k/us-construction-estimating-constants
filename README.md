@@ -13,7 +13,6 @@ Compiled 2026-09-29 by TakeoffMetric Editorial (TakeOffMetrics Research). 148 ro
 | File | Content |
 |---|---|
 | `constants.csv` | The data, UTF-8, comma-separated, one value per row |
-| `datapackage.json` | Frictionless Data descriptor with the field schema |
 
 ## Columns
 
