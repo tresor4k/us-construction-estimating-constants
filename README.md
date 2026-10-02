@@ -65,10 +65,32 @@ How the calculators use these values is described on the [methodology page](http
 
 By source type: manufacturer data sheet 44 · federal (public domain) 39 · trade association 37 · other 25 · supplier 3.
 
-Two of the calculators that use these values, as examples: the
-[concrete calculator](https://takeoffmetric.com/concrete/concrete-calculator/) (bag yields, unit weight) and the
-[gravel calculator](https://takeoffmetric.com/earthwork/gravel-calculator/) (loose and bank densities). The
-`used_by_tool_url` column lists the page for every row.
+## Calculators that read these values
+
+Counted from the `used_by_tool_url` column: 19 calculator pages on takeoffmetric.com read at least one row of this
+table. A row that several calculators use is counted once for each of them.
+
+| Calculator page | Rows |
+|---|---:|
+| [takeoffmetric.com/earthwork/gravel-calculator/](https://takeoffmetric.com/earthwork/gravel-calculator/) | 24 |
+| [takeoffmetric.com/earthwork/fill-dirt-calculator/](https://takeoffmetric.com/earthwork/fill-dirt-calculator/) | 18 |
+| [takeoffmetric.com/masonry/concrete-block-calculator/](https://takeoffmetric.com/masonry/concrete-block-calculator/) | 17 |
+| [takeoffmetric.com/framing/board-foot-calculator/](https://takeoffmetric.com/framing/board-foot-calculator/) | 16 |
+| [takeoffmetric.com/concrete/rebar-calculator/](https://takeoffmetric.com/concrete/rebar-calculator/) | 15 |
+| [takeoffmetric.com/measure/cubic-yard-calculator/](https://takeoffmetric.com/measure/cubic-yard-calculator/) | 12 |
+| [takeoffmetric.com/concrete/concrete-calculator/](https://takeoffmetric.com/concrete/concrete-calculator/) | 10 |
+| [takeoffmetric.com/earthwork/topsoil-calculator/](https://takeoffmetric.com/earthwork/topsoil-calculator/) | 10 |
+| [takeoffmetric.com/masonry/paver-base-calculator/](https://takeoffmetric.com/masonry/paver-base-calculator/) | 10 |
+| [takeoffmetric.com/decks-fences/deck-calculator/](https://takeoffmetric.com/decks-fences/deck-calculator/) | 9 |
+| [takeoffmetric.com/earthwork/sand-calculator/](https://takeoffmetric.com/earthwork/sand-calculator/) | 8 |
+| [takeoffmetric.com/framing/wall-framing-calculator/](https://takeoffmetric.com/framing/wall-framing-calculator/) | 8 |
+| [takeoffmetric.com/hvac/duct-calculator/](https://takeoffmetric.com/hvac/duct-calculator/) | 8 |
+| [takeoffmetric.com/roofing/roofing-calculator/](https://takeoffmetric.com/roofing/roofing-calculator/) | 6 |
+| [takeoffmetric.com/concrete/concrete-cost-calculator/](https://takeoffmetric.com/concrete/concrete-cost-calculator/) | 5 |
+| [takeoffmetric.com/concrete/footing-calculator/](https://takeoffmetric.com/concrete/footing-calculator/) | 5 |
+| [takeoffmetric.com/decks-fences/fence-calculator/](https://takeoffmetric.com/decks-fences/fence-calculator/) | 5 |
+| [takeoffmetric.com/paving/asphalt-calculator/](https://takeoffmetric.com/paving/asphalt-calculator/) | 4 |
+| [takeoffmetric.com/stairs/stair-stringer-calculator/](https://takeoffmetric.com/stairs/stair-stringer-calculator/) | 1 |
 
 ## Limits
 
