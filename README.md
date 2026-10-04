@@ -8,6 +8,11 @@ primary source it was read from.
 
 Compiled 2026-09-29 by TakeoffMetric Editorial (TakeOffMetrics Research). 148 rows.
 
+**Version 1.1.0 (2026-10-04).** 55 of the 148 rows keep their source, link and dates but carry no value: their publishers'
+terms of use do not allow republication, or could not be read (`values_withheld`, `withheld_hosts`). The 93 other values
+are unchanged from 1.0.0. Row HVC-003 is now credited to its three authors (Liu, Long & Chen, 2012), and its quantity
+states that the figure is the roughness of the galvanized duct fittings in that study.
+
 ## Files
 
 | File | Content |
@@ -18,13 +23,15 @@ Compiled 2026-09-29 by TakeoffMetric Editorial (TakeOffMetrics Research). 148 ro
 
 `id` · `category` · `material_or_item` · `quantity` · `value` · `unit` · `value_si` · `unit_si` · `condition` ·
 `source_publisher` · `source_title` · `source_url` · `source_type` · `date_opened` · `used_by_tool_url` · `engine_file` ·
-`engine_symbol` · `notes`
+`engine_symbol` · `notes` · `values_withheld` · `withheld_hosts`
 
 - `value` is written as the source prints it, in US customary units.
 - `value_si` is a conversion of `value` with the exact NIST factors (1 lb = 0.45359237 kg, 1 ft = 0.3048 m), rounded to
   4 significant digits. Where the source prints its own metric figure and it differs by rounding, `notes` gives it.
 - `source_type` is one of `federal_public_domain`, `manufacturer_datasheet`, `trade_association`, `supplier`, `other`
   (university extension services, state DOT specifications, a peer-reviewed paper, a national laboratory resource).
+- `values_withheld` is `true` when `value` and `value_si` are left empty because the publisher's terms of use forbid
+  republication or could not be read; `withheld_hosts` names the domain(s) concerned. Read the value at `source_url`.
 - `used_by_tool_url`, `engine_file` and `engine_symbol` may hold several entries separated by `; ` when more than one
   calculator uses the same value. The two engine columns point to the site's source code, which is not part of this
   package.
@@ -41,7 +48,10 @@ Compiled 2026-09-29 by TakeoffMetric Editorial (TakeOffMetrics Research). 148 ro
   grout table) are not reproduced here; the calculator pages link to them.
 - No passage from any source is copied here: value, unit and link only.
 - Each `value` was checked on 2026-09-29 against the number the calculator code holds at `engine_symbol`: 148 of 148
-  match.
+  matched in 1.0.0; the 93 values kept in 1.1.0 are those same values.
+- On 2026-10-04 the terms of use of every publisher were looked up. A value is kept when it comes from a US federal
+  publication (public domain), from a publisher whose terms allow reuse, or from a publisher that has no terms page;
+  where the terms forbid republication or could not be read, the value is withheld.
 
 How the calculators use these values is described on the [methodology page](https://takeoffmetric.com/methodology/).
 
@@ -61,7 +71,7 @@ How the calculators use these values is described on the [methodology page](http
 | lumber | 16 | NIST PS 20-20, University of Missouri Extension |
 | framing | 8 | APA |
 | decking | 4 | Trex installation guide |
-| hvac | 8 | McGill AirFlow, PNNL, NASA Glenn Research Center, Purdue University |
+| hvac | 8 | McGill AirFlow, PNNL, NASA Glenn Research Center, Liu, Long & Chen (ASHRAE RP-1493) |
 
 By source type: manufacturer data sheet 44 · federal (public domain) 39 · trade association 37 · other 25 · supplier 3.
 
@@ -102,6 +112,8 @@ table. A row that several calculators use is counted once for each of them.
 
 ## License
 
-CC BY 4.0 for the compilation; each value remains attributed to its source. Cite as: TakeoffMetric Editorial,
-*US Construction Estimating Constants*, 2026, takeoffmetric.com. Values from federal publications are US
-government works; values from other publishers stay attributed to them through `source_publisher` and `source_url`.
+CC BY 4.0 covers the compilation: the selection and arrangement of the rows, the SI conversions, the conditions and the
+notes. It does not cover third-party values: values from US federal publications are government works in the public
+domain, and every other value stays under its publisher's terms, cited row by row through `source_publisher` and
+`source_url`. Cite as: TakeoffMetric Editorial, *US Construction Estimating Constants*, version 1.1.0, 2026,
+takeoffmetric.com.
