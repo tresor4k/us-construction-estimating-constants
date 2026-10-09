@@ -13,6 +13,10 @@ terms of use do not allow republication, or could not be read (`values_withheld`
 are unchanged from 1.0.0. Row HVC-003 is now credited to its three authors (Liu, Long & Chen, 2012), and its quantity
 states that the figure is the roughness of the galvanized duct fittings in that study.
 
+**Version 1.1.1 (2026-10-09).** Three source links that redirected now point to their final address, same document:
+the QUIKRETE No. 1101 data sheet (rows CON-001 to CON-005), NIST PS 20-20 Revision 1 (LUM-002 to LUM-016) and the archived
+GAF RESHR112 sell sheet (ROF-003). No value, unit or condition changed.
+
 ## Files
 
 | File | Content |
@@ -115,5 +119,5 @@ table. A row that several calculators use is counted once for each of them.
 CC BY 4.0 covers the compilation: the selection and arrangement of the rows, the SI conversions, the conditions and the
 notes. It does not cover third-party values: values from US federal publications are government works in the public
 domain, and every other value stays under its publisher's terms, cited row by row through `source_publisher` and
-`source_url`. Cite as: TakeoffMetric Editorial, *US Construction Estimating Constants*, version 1.1.0, 2026,
+`source_url`. Cite as: TakeoffMetric Editorial, *US Construction Estimating Constants*, version 1.1.1, 2026,
 takeoffmetric.com.
