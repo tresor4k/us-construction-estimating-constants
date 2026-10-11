@@ -17,6 +17,11 @@ states that the figure is the roughness of the galvanized duct fittings in that 
 the QUIKRETE No. 1101 data sheet (rows CON-001 to CON-005), NIST PS 20-20 Revision 1 (LUM-002 to LUM-016) and the archived
 GAF RESHR112 sell sheet (ROF-003). No value, unit or condition changed.
 
+**Version 1.2.0 (2026-10-11).** Rows LUM-002 to LUM-016 now cite the current edition of the American Softwood Lumber
+Standard, NIST PS 20-25 (Table 3), which supersedes PS 20-20 Revision 1; the source was opened on 2026-10-01. The inch
+values are unchanged. The notes give the millimetre figure PS 20-25 prints, to the tenth, and the SI value of six rows
+(LUM-010 to LUM-013, LUM-015, LUM-016) moves by 0.1 mm to that printed figure. No other row changed.
+
 ## Files
 
 | File | Content |
@@ -72,7 +77,7 @@ How the calculators use these values is described on the [methodology page](http
 | masonry | 17 | CMHA / NCMA |
 | pavers | 8 | CMHA, Oregon State University Extension |
 | roofing | 6 | GAF data sheets |
-| lumber | 16 | NIST PS 20-20, University of Missouri Extension |
+| lumber | 16 | NIST PS 20-25, University of Missouri Extension |
 | framing | 8 | APA |
 | decking | 4 | Trex installation guide |
 | hvac | 8 | McGill AirFlow, PNNL, NASA Glenn Research Center, Liu, Long & Chen (ASHRAE RP-1493) |
@@ -119,5 +124,5 @@ table. A row that several calculators use is counted once for each of them.
 CC BY 4.0 covers the compilation: the selection and arrangement of the rows, the SI conversions, the conditions and the
 notes. It does not cover third-party values: values from US federal publications are government works in the public
 domain, and every other value stays under its publisher's terms, cited row by row through `source_publisher` and
-`source_url`. Cite as: TakeoffMetric Editorial, *US Construction Estimating Constants*, version 1.1.1, 2026,
+`source_url`. Cite as: TakeoffMetric Editorial, *US Construction Estimating Constants*, version 1.2.0, 2026,
 takeoffmetric.com.
